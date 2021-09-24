@@ -1,134 +1,129 @@
-//The Below function shows the current date on the screen.//
+//Function for time/date format and functions for local storage time blocks.
 $(document).ready(function(){
     $("#timeDay").text(moment().format("Do of MMMM, YYYY"))
 
-//Set and Pull for Local Storage saving buttons per time block//
-    pullTime()
-    $(".saveBtn").on("click", function(event){
-        event.preventDefault()
+    nineAM()
+    tenAM()
+    elevenAM()
+    twelveAM()
+    thirteenAM()
+    fourteenAM()
+    fifteenAM()
+    sixteenAM()
+    seventeenAM()
 
-        var timePull = $(`#9`).val();
-        localStorage.setItem("timePull1", timePull)
-        pullTime()
-    })
-
-    function pullTime(){
-        var storedData = localStorage.getItem("timePull1")
-        $("#9").val(storedData)
-    }
-
-    pullTimeOne()
-    $("saveBtn").on("click", function(event){
-        event.preventDefault()
-        
-        var timePull = $(`#10`).val()
-        var key = timePull.value;
-        localStorage.setItem("timePullOne" , key)
-        pullTimeOne()
-    })
-
-    function pullTimeOne(){
-        var storedData = localStorage.getItem("timePullOne")
-        $("#10").val(storedData)
-    }
-
-    pullTimeTwo()
-    $("saveBtn").on("click", function(event){
-        event.preventDefault()
-        
-        var timePull = $("#11").val()
-        localStorage.setItem("timePull2", timePull)
-        pullTimeTwo()
-    })
-    function pullTimeTwo(){
-        var storedData = localStorage.getItem("timePull2")
-        $("#11").val(storedData)
-    }
-
-
-    pullTimeThree()
-    $("saveBtn").on("click", function(event){
-        event.preventDefault()
-        
-        var timePull = $("#12").val()
-        localStorage.setItem("timePull3", timePull)
-        pullTimeThree()
-    })
-    function pullTimeThree(){
-        var storedData = localStorage.getItem("timePull3")
-        $("#12").val(storedData)
-    }
-
-    pullTimeFour()
-    $("saveBtn").on("click", function(event){
-        event.preventDefault()
-        
-        var timePull = $("#12").val()
-        localStorage.setItem("timePull4", timePull)
-        pullTimeFour()
-    })
-    function pullTimeFour(){
-        var storedData = localStorage.getItem("timePull4")
-        $("#13").val(storedData)
-    }
-
-    pullTimeFive()
-    $("saveBtn").on("click", function(event){
-        event.preventDefault()
-        
-        var timePull = $("#12").val()
-        localStorage.setItem("timePull5", timePull)
-        pullTimeFive()
-    })
-    function pullTimeFive(){
-        var storedData = localStorage.getItem("timePull5")
-        $("#14").val(storedData)
-    }
-
-    pullTimeSix()
-    $("saveBtn").on("click", function(event){
-        event.preventDefault()
-        
-        var timePull = $("#12").val()
-        localStorage.setItem("timePull6", timePull)
-        pullTimeSix()
-    })
-    function pullTimeSix(){
-        var storedData = localStorage.getItem("timePull6")
-        $("#15").val(storedData)
-    }
-
-    pullTimeSeven()
-    $("saveBtn").on("click", function(event){
-        event.preventDefault()
-        
-        var timePull = $("#12").val()
-        localStorage.setItem("timePull7", timePull)
-        pullTimeSeven()
-    })
-    function pullTimeSeven(){
-        var storedData = localStorage.getItem("timePull7")
-        $("#16").val(storedData)
-    }
-
-    pullTimeEight()
-    $("saveBtn").on("click", function(event){
-        event.preventDefault()
-        
-        var timePull= $("#12").val()
-        localStorage.setItem("timePull8", timePull)
-        pullTimeEight()
-    })
-    function pullTimeEight(){
-        var storedData = localStorage.getItem("timePull8")
-        $("#17").val(storedData)
-    }
-//Sets which is signified as a time
-var timeBlocks = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
-
-
+//Set and Pull for Local Storage saving buttons per time block
 timeNow();
 });
+
+$(".9AM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#9`).val();
+    localStorage.setItem("9AM", plans)
+})
+
+$(".10AM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#10`).val();
+    localStorage.setItem("10AM", plans)
+})
+
+$(".11AM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#11`).val();
+    localStorage.setItem("11AM", plans)
+})
+
+$(".12PM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#12`).val();
+    localStorage.setItem("12PM", plans)
+})
+
+$(".1PM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#13`).val();
+    localStorage.setItem("1PM", plans)
+})
+
+$(".2PM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#14`).val();
+    localStorage.setItem("2PM", plans)
+})
+
+$(".3PM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#15`).val();
+    localStorage.setItem("3PM", plans)
+})
+
+$(".4PM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#16`).val();
+    localStorage.setItem("4PM", plans)
+})
+
+$(".5PM").on("click", function(event){
+    event.preventDefault()
+
+    var plans = $(`#17`).val();
+    localStorage.setItem("5PM", plans)
+})
+
+
+function nineAM(){
+    var storedData = localStorage.getItem("9AM")
+    $("#9").val(storedData)
+}
+
+function tenAM(){
+    var storedData = localStorage.getItem("10AM")
+    $("#10").val(storedData)
+}
+
+function elevenAM(){
+    var storedData = localStorage.getItem("11AM")
+    $("#11").val(storedData)
+}
+
+function twelveAM(){
+    var storedData = localStorage.getItem("12PM")
+    $("#12").val(storedData)
+}
+
+function thirteenAM(){
+    var storedData = localStorage.getItem("1PM")
+    $("#13").val(storedData)
+}
+
+function fourteenAM(){
+    var storedData = localStorage.getItem("2PM")
+    $("#14").val(storedData)
+}
+
+function fifteenAM(){
+    var storedData = localStorage.getItem("3PM")
+    $("#15").val(storedData)
+}
+
+function sixteenAM(){
+    var storedData = localStorage.getItem("4PM")
+    $("#16").val(storedData)
+}
+
+function seventeenAM(){
+    var storedData = localStorage.getItem("5PM")
+    $("#17").val(storedData)
+}
 
 function timeNow(){
     let presentHour = parseInt(moment().format("H"));
