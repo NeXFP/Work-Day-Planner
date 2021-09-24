@@ -26,118 +26,64 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day.</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="dateTime"></p>
     </header>
 
 <!--Timeblocks are below-->
     <div class="container">
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">9a.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="9"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="9"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 9a.m.</p>
+        <textarea type="text" name="" id="9" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">10a.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="10"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="10"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 10a.m.</p>
+        <textarea type="text" name="" id="10" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">11a.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="11"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="11"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 11a.m.</p>
+        <textarea type="text" name="" id="11" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">12p.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="12"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="12"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 12p.m.</p>
+        <textarea type="text" name="" id="12" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">1p.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="13"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="13"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 1p.m.</p>
+        <textarea type="text" name="" id="13" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">2p.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="14"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="14"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 2p.m.</p>
+        <textarea type="text" name="" id="14" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">3p.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="15"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="15"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 3p.m.</p>
+        <textarea type="text" name="" id="15" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">4p.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="16"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="16"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 4p.m.</p>
+        <textarea type="text" name="" id="16" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
 
-      <div class ="row">
-        <div class ="col-sm-1">
-          <p class= "d-flex justify-content-end">5p.m.</p>
-        </div>
-        <div class ="col-sm-10 px-1">
-          <textarea class="form-control" rows="3" id="17"></textarea>
-        </div>
-        <div class="col-sm-1">
-          <button type= "button" class="btn saveBtn fas fa-save" data-hour="17"></button>
-        </div>
+      <div class="row">
+        <p class="col-md-1 col-sm-1 col-1 hour"> 5p.m.</p>
+        <textarea type="text" name="" id="17" class="col-md-10 col-sm-10 col-10"></textarea>
+        <button class="col-md-1 col-sm-1 saveBtn btn fas fa-save"></button>
       </div>
     </div>
 

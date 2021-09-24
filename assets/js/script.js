@@ -5,5 +5,5 @@ $(document).ready(function(){
     var time = document.querySelectorAll("");
     var save = document.querySelectorAll("");
     var hour = moment().format("HH");
-    $("currentDate").text(moment(format.("dd, MM, YY"));
-})
+    $("dateTime").text(moment(format("dd, MM, YY")));
+});
